@@ -1389,6 +1389,41 @@ body.gesperrt .kopf {
   font-size: 15px;
   font-weight: 600;
 }
+
+/* Microsoft-Konfiguration über den mobilen OneDrive-/Dateidialog */
+.datei-versteckt {
+  position: fixed;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+.ms-einrichtung {
+  margin: 10px 0 14px;
+  padding-left: 22px;
+  color: var(--text-2);
+  font-size: 14px;
+}
+.ms-einrichtung li + li {
+  margin-top: 7px;
+}
+.ms-konfig-ok {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 12px 0;
+  padding: 10px 12px;
+  border: 1px solid var(--gruen);
+  border-radius: 10px;
+  background: #edf8f0;
+  color: var(--text-2);
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+.ms-konfig-ok strong {
+  color: #19692c;
+  font-size: 14px;
+}
 .versand-option small {
   font-size: 13px;
   color: var(--text-2);

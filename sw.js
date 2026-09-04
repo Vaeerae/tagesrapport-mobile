@@ -1,6 +1,6 @@
 // Service Worker: hält die App-Dateien im Gerät vor, damit die Web-App auch ohne Empfang startet.
 // Daten (Rapporte, Fotos) liegen nicht hier, sondern in der IndexedDB der App und in OneDrive.
-const CACHE = 'tagesrapport-0.8.0';
+const CACHE = 'tagesrapport-0.9.0';
 const DATEIEN = ['./', './index.html', './app.js', './app.css', './manifest.webmanifest', './icon.svg', './icon-192.png', './icon-512.png', './microsoft.json'];
 
 self.addEventListener('install', (e) => {
