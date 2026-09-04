@@ -1445,25 +1445,6 @@ body.gesperrt .kopf {
   text-align: center;
 }
 
-/* Foto-Kacheln mit Galerie und Serie */
-.kachel-gruppe {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  min-width: 0;
-}
-.kachel-gruppe .kachel {
-  width: 100%;
-}
-.kachel-unten {
-  display: flex;
-  gap: 6px;
-}
-.kachel-unten .knopf {
-  flex: 1;
-  padding: 8px 6px;
-  white-space: nowrap;
-}
 .foto-knoepfe-paar {
   display: inline-flex;
   gap: 4px;
@@ -1522,13 +1503,35 @@ body.gesperrt .kopf {
   padding: 14px 16px calc(18px + var(--safe-bottom));
   background: #000;
 }
+.kamera-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+.kamera-ordner {
+  flex: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+}
+.kamera-ordner:active {
+  background: rgba(255, 255, 255, 0.28);
+}
 .kamera-vorschau {
   display: flex;
   gap: 4px;
+  overflow: hidden;
 }
 .kamera-vorschau img {
-  width: 40px;
-  height: 40px;
+  width: 34px;
+  height: 34px;
   object-fit: cover;
   border-radius: 6px;
   border: 1px solid rgba(255, 255, 255, 0.4);
