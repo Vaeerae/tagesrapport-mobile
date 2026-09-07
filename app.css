@@ -1978,3 +1978,18 @@ body.gesperrt .vollbild {
 .kopf-knopf.dreht {
   animation: drehen 1s linear infinite;
 }
+
+/* Hinweis unter einer wartenden Aufnahme: letzte Prüfung auf Transkripte */
+.transkript-pruefung {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--text-2);
+}
+.transkript-pruefung .link {
+  flex: none;
+  padding: 4px 0;
+}
