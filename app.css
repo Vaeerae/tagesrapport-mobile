@@ -1929,3 +1929,36 @@ body.gesperrt .vollbild {
   pointer-events: auto;
   user-select: auto;
 }
+
+/* Runde 7: Gruppen im Reiter, Karten je einzelner Pumpe */
+.gruppen-kopf {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 14px 14px 4px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-2);
+}
+.gruppen-zahl {
+  min-width: 18px;
+  padding: 1px 6px;
+  border-radius: 9px;
+  background: var(--grau-1);
+  color: var(--text);
+  font-size: 11px;
+  text-align: center;
+}
+.karte-fertig {
+  opacity: 0.62;
+}
+.karte-untertitel {
+  margin: 10px 0 2px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-2);
+}
