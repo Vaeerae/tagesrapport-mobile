@@ -1463,21 +1463,32 @@ body.gesperrt .kopf {
   padding-right: 10px;
 }
 
-/* Serienaufnahme (Kamera bleibt offen) */
+/* App-Kamera: Bild füllt den ganzen Schirm, die Bedienung liegt unten über dem Bild */
 .kamera {
   position: fixed;
   inset: 0;
   background: #000;
   z-index: 70;
-  display: flex;
-  flex-direction: column;
 }
 .kamera-video {
-  flex: 1;
+  position: absolute;
+  inset: 0;
   width: 100%;
-  min-height: 0;
+  height: 100%;
   object-fit: cover;
   background: #000;
+}
+.kamera-status {
+  position: absolute;
+  top: calc(10px + var(--safe-top));
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 12px;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
 }
 .kamera-blitz {
   position: absolute;
@@ -1486,24 +1497,17 @@ body.gesperrt .kopf {
   opacity: 0.7;
   pointer-events: none;
 }
-.kamera-oben {
+.kamera-unten {
   position: absolute;
-  top: 0;
   left: 0;
   right: 0;
-  padding: calc(12px + var(--safe-top)) 16px 12px;
-  color: #fff;
-  font-weight: 600;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-}
-.kamera-unten {
+  bottom: 0;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   gap: 12px;
-  padding: 14px 16px calc(18px + var(--safe-bottom));
-  background: #000;
+  padding: 28px 16px calc(18px + var(--safe-bottom));
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.75));
 }
 .kamera-links {
   display: flex;
@@ -1911,15 +1915,6 @@ body.gesperrt .kopf {
   display: flex;
   gap: 8px;
   margin-top: 12px;
-}
-.kamera-hinweis {
-  font-size: 12px;
-  opacity: 0.8;
-}
-.kamera-oben {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
 }
 
 /* Versendeter Rapport: Galerie und Foto-Ansicht bleiben bedienbar */
