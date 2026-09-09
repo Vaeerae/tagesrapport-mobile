@@ -632,6 +632,34 @@ input.schmal {
 }
 
 /* Geräte */
+.karte-aktionen {
+  display: flex;
+  gap: 6px;
+  flex: none;
+}
+.geraete-wahl {
+  margin-bottom: 6px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--grau-1);
+}
+.geraete-wahl .chips {
+  margin-top: 0;
+}
+.geraete-neu {
+  margin: 4px 0 6px;
+}
+.geraete-neu input {
+  min-height: 40px;
+}
+.knopf-plus {
+  width: 44px;
+  padding: 0;
+  font-size: 22px;
+  line-height: 1;
+}
+.favoriten-aktiv .chip-aktiv {
+  padding-right: 10px;
+}
 .geraet-zeile {
   display: flex;
   align-items: center;
@@ -645,28 +673,6 @@ input.schmal {
 }
 
 /* Vorgang */
-.vorschlaege {
-  margin-top: 8px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-.vorschlag {
-  text-align: left;
-  background: var(--grau-1);
-  border: 0;
-  border-radius: 8px;
-  padding: 10px 12px;
-  display: flex;
-  justify-content: space-between;
-  gap: 8px;
-  cursor: pointer;
-}
-.vorschlag-anzahl {
-  color: var(--grau-3);
-  font-size: 13px;
-  flex: none;
-}
 .aufnahme {
   margin-top: 10px;
 }
